@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Account Activation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .activation-info {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    .activation-info p {
+      margin-bottom: 10px;
+    }
+
+    .activation-info strong {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello <%= name %>,</h1>
+  <div class="activation-info">
+    <p>Welcome to our platform! To activate your account, please use the following activation code:</p>
+    <p><strong>Activation Code:</strong> <%= activationCode %></p>
+    <p>Thank you for joining us!</p>
+  </div>
+</body>
+</html>

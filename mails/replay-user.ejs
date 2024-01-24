@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reply to User's Question</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    .question {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .reply {
+      border-left: 3px solid #007bff;
+      padding-left: 10px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Reply to User's Question</h2>
+    
+    <% if (username && question && reply) { %>
+      <div class="question">
+        <p><strong>Username:</strong> <%= username %></p>
+        <p><strong>Question:</strong> <%= question %></p>
+      </div>
+
+      <div class="reply">
+        <p><strong>Your Reply:</strong></p>
+        <p><%= reply %></p>
+      </div>
+    <% } else { %>
+      <p>Sorry, there was an issue retrieving the information.</p>
+    <% } %>
+    
+    <p>Thank you for using our service!</p>
+  </div>
+</body>
+</html>
